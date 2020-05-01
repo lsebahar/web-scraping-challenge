@@ -94,7 +94,7 @@ def scrape():
 
     py_dict = {"News_Title": news_title,
         "News_Paragraph": news_p,
-        "Mars_Featured Image:": featured_image_url,
+        "Mars_Featured_Image": featured_image_url,
         "Mars_Weather": mars_weather,
         "Facts_Table": html_table,
         #"Mars Hemispheres": hemisphere_image_urls

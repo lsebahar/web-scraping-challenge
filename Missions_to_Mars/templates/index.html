@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Everything MARS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -13,12 +14,30 @@
   <div class="container-fluid">
     <div class="jumbotron text-center">
       <h1>Learn about the Red Plant</h1>
-      <p>Sand. Red. High winds. Red sand. Sand. Water?</p>
+      <p>Sand. Martians. High winds. More sand. Water?</p>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">See what's new!</a></p>
     </div>
     <h2>Latest news:</h2>
-    <h3>{{ mars.News_Title }}</h3>
+    <p>{{ mars.News_Title }}</p>
     <p>{{ mars.News_Paragraph }}</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Featured Mars Image:</h2>
+          <img src={{ mars.Mars_Featured_Image }} class="img-fluid" alt="main-image" /> 
+        </div>
+        <div class="col">
+          <h3>Mars Weather</h3>
+          <p>{{ mars.Mars_Weather }}</p>
+          <h3>More Facts About Mars!</h3>
+          <table> {{mars.Facts_Table | safe}} </table>
+          <div>
+            
+
+        </div>
+      </div>
+    
+    
   </div>
   </div>
 </body>
